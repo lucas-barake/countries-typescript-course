@@ -1,4 +1,4 @@
-# TypeScript and JavaScript Course (Countries App)
+# TypeScript and JavaScript [Course](https://youtu.be/iLqNN94XrMw) (Countries App)
 
 ## Welcome! 🙌
 
