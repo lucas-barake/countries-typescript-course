@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <script src="./static/bundle/script.js" defer></script>
+    <link rel="stylesheet" href="./static/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1f2c35]">
+    <!-- HEADER -->
+    <header class="p-6 bg-[#2b3743]">
+      <h1 class="font-medium text-sm">Where in the world?</h1>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home-page" class="flex flex-col gap-6 mt-12">
+      <!-- SEARCH INPUT -->
+      <form class="flex justify-center">
+        <div class="relative w-96">
+          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg
+              class="w-5 h-5 text-gray-500 dark:text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </div>
+          <input
+            type="search"
+            id="search"
+            class="block p-4 pl-10 w-full font-medium text-xs zinc-gray-900 outline-none rounded-lg bg-[#2b3743]"
+            placeholder="Search for a country..."
+            required
+          />
+          <button
+            type="submit"
+            class="inline-flex absolute right-2.5 bottom-2 items-center px-3 py-1 text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out bg-blue-500 rounded-md disabled:bg-neutral-800 shadow hover:bg-blue-400"
+          >
+            <svg
+              id="loading-spinner"
+              class="w-5 h-5 mr-3 -ml-1 text-white animate-spin hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
+            Search
+          </button>
+        </div>
+      </form>
+
+      <!-- STATE CONTAINER -->
+      <div class="text-center" id="state"></div>
+
+      <!-- COUNTRY LIST -->
+      <div id="country-list" class="flex flex-col items-center justify-between gap-4 px-24 mb-20">
+        <!-- COUNTRY -->
+        <!-- <div class="flex flex-col bg-neutral-900 w-72 shadow-lg rounded-lg">
+          <img
+            class="rounded-t-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png"
+          />
+          <div class="flex flex-col pl-6 py-4 gap-1">
+            <h1 class="text-sm font-medium">Germany</h1>
+            <p class="font-light text-xs">
+              <span class="font-medium">Population:</span> 81.770.900
+            </p>
+            <p class="font-light text-xs"><span class="font-medium">Region:</span> Europe</p>
+            <p class="font-light text-xs"><span class="font-medium">Capital:</span> Berlin</p>
+          </div>
+          <button class="text-xs font-medium self-end px-6 py-4 hover:animate-pulse" type="button">
+            Learn more →
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <div class="flex flex-col items-center justify-between gap-4 px-24 mb-20">
+      <button class="px-2 py-1 bg-[#2b3743] text-medium text-xs shadow-md rounded-md">
+        ← Back
+      </button>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/800px-Flag_of_Belgium.svg.png"
+      />
+      <h1>Belgium</h1>
+      <p class="text-sm font-light"><span class="font-medium">Native Name:</span> Belgie</p>
+      <p class="text-sm font-light"><span class="font-medium">Population:</span> 11,319,511</p>
+      <p class="text-sm font-light"><span class="font-medium">Region:</span> Europe</p>
+      <p class="text-sm font-light"><span class="font-medium">Sub Region:</span> Western Europe</p>
+      <p class="text-sm font-light"><span class="font-medium">Capital:</span> Brussels</p>
+      <p class="text-sm font-light"><span class="font-medium">Top Level Domain:</span> .be</p>
+      <p class="text-sm font-light"><span class="font-medium">Currencies:</span> Euro</p>
+      <p class="text-sm font-light">
+        <span class="font-medium">Languages:</span> Dutch, French, and German
+      </p>
+    </div> -->
+  </body>
+</html>
