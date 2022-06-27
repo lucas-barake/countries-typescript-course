@@ -1,4 +1,4 @@
-import { fetchGetQuery } from './api/fetch-get-query';
+// import { fetchGetQuery } from './api/fetch-get-query';
 import { getQuery } from './store/get-query';
 import { getLocalStorage } from './store/store';
 // import { xmlGetQuery } from './api/xmlGetQuery';
